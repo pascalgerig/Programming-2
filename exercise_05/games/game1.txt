@@ -1,0 +1,3 @@
+7 12
+Otis Redding O 1 1 R
+Solomon Burke S 7 12 L

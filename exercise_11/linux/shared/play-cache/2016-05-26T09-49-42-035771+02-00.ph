@@ -1,0 +1,1 @@
+(BoardRenderer new	boardModel: BoardModel new)		openInWindow		setLabel: 'Turtle Game'

@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+repositories {
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    java {
+      srcDirs = ['src']
+    }
+  }
+  test {
+    java {
+      srcDirs = ['test']
+    }
+  }
+}
+
+test {
+  testLogging.showStandardStreams = true
+}
+
+dependencies {
+  compile 'junit:junit:4.12'
+  compile 'org.mockito:mockito-core:2.7.19'
+}
+
+jar {
+  manifest {
+    attributes (
+      'Main-Class': 'quoridor.Game'
+    )
+  }
+}
